@@ -118,6 +118,7 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     width: 145px;
+    display: block;
   }
   
   .logo-header{
@@ -169,8 +170,6 @@
 
   .header-nav-link:hover,
   .header-nav-link:focus,
-  .header-nav-tel:hover,
-  .header-nav-tel:focus,
   .current {
     color: var(--accent-color);
   }
@@ -223,29 +222,26 @@
   }
  
   .project-list{
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
 
   }
 
-  .project-list-item{
-    border: 1px solid var(--border-color);
+  .project-list-item{ 
     box-sizing: border-box;
     max-width: 370px;
     flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
 
   }
   .project-list-title{
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
-padding-bottom: 4px;
+    margin-bottom: 4px;
     letter-spacing: 0.06em;
   }
  
@@ -306,7 +302,7 @@ padding-bottom: 4px;
   }
   
   /* -------------Наши особенности------------ */
-    .main-section{
+    .section{
       padding-top: 94px;
       padding-bottom: 94px;
     }
@@ -322,7 +318,9 @@ padding-bottom: 4px;
       margin-top: -30px;
     }
 
-
+    .about-us{
+      padding-bottom: 0;
+    }
     .about-item{
       margin-left: 30px;
       margin-top: 30px;
@@ -393,10 +391,11 @@ padding-bottom: 4px;
     margin-left: -30px;
     margin-top: -30px;
   }
+  /*
   .team-list-item{
     
   }
-
+*/
   .team-list-item {
     margin-left: 30px;
     margin-top: 30px;
@@ -442,7 +441,7 @@ padding-bottom: 4px;
   }
   .footer-addr{
     font-style: inherit;
-    margin-top: 20px;
+
 
   }
 
