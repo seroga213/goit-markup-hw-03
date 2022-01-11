@@ -6,6 +6,7 @@
     --bg-color: #2f303a;
     --ex-bg-color: #f5f4fa;
     --border-color:#ececec;
+    --icons-color: #afb1b8;
   }
   
   body {
@@ -152,6 +153,11 @@
     padding-bottom: 32px;
     display: block;
   }
+  .header-icons {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+ 
 /*
  .current{
   color:var(--accent-color)
@@ -251,7 +257,11 @@
   padding: 20px 24px;
 
 }
-
+.project-list-item:hover,
+.project-list-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
   /* ------------------hero styles---------------- */
   
@@ -260,6 +270,14 @@
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bgr.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
   }
   
   .hero-title {
@@ -270,6 +288,7 @@
     text-transform: uppercase;
     color: var(--external-color);
     margin-bottom: 30px;
+    
    
   }
   .flex-btn {
@@ -302,6 +321,15 @@
   }
   
   /* -------------Наши особенности------------ */
+  .about-us-container {
+    background: var(--ex-bg-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+  }
+
     .section{
       padding-top: 94px;
       padding-bottom: 94px;
@@ -432,8 +460,92 @@
   .title-name {
     padding: 30px 0;
   }
+  .team-social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
   
+  .team-social-item + .team-social-item {
+    margin-left: 10px;
+  }
+  
+  .team-social-links {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .team-social-icons {
+    fill: var(--icons-color);
+  }
+  
+  .team-social-links:hover,
+  .team-social-links:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .team-social-links:hover .team-social-icons,
+  .team-social-links:focus .team-social-icons {
+    fill: var(--external-color);}
+  
+/*----------------КЛИЕНТЫ---------------*/
+.second-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  border: 1px solid var(--icons-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+}
+
+.client-icon {
+  fill: var(--icons-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  background-color: var(--external-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);}
+
   /* -------------footer--------------- */
+  .footer-container{
+    display: flex;
+  }
+  .address-container {
+    margin-right: 70px;
+  }
   .footer {
     background-color: var(--bg-color);
     padding-top: 60px;
@@ -441,10 +553,12 @@
   }
   .footer-addr{
     font-style: inherit;
-
-
   }
-
+/*
+  .footer-container{
+    display: flex;
+  }
+  */
   .footer-addr-list.list{
     padding-top: 0;
     padding-bottom: 0;
@@ -472,4 +586,48 @@
   .footer-addr-link:focus {
     color: var(--accent-color);
   }
+  /*---------------Вторая часть футера------------*/
+  .footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+    color: var(--external-color);
+  }
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .footer-social-links:focus,
+  .footer-social-links:hover {
+  background-color: var(--accent-color);
+}
+
+  .footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+  .footer-social-links {
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .footer-social-icons {
+    fill: var(--external-color);}
+
+  .join-us-item:not(:last-child) {
+      margin-right: 10px;
+  }
+
+    
   
